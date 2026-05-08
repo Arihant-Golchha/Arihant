@@ -13,8 +13,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Elite Digital Experience | Portfolio",
-  description: "Software Engineer | AI Builder | Creative Developer",
+  title: "Arihant",
+  description: "Arihant Golchha | AI & Data Science Undergrad | Full-Stack Builder",
 };
 
 export default function RootLayout({
