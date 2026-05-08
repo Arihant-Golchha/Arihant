@@ -9,11 +9,11 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Binary29 Platform",
+    title: "Swadeshika Platform",
     category: "Full-Stack Web App",
     description: "Architected an e-commerce platform handling 500+ users. Optimized checkout flows reducing cart abandonment by 25%, and engineered robust backend systems that dropped response latency by 40%.",
     tags: ["Node.js", "React", "MySQL", "Razorpay"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2669&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2669&auto=format&fit=crop",
     liveDemo: "https://www.swadeshika.in",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     category: "AI / Computer Vision",
     description: "Built an automated OCR-powered assessment engine evaluating handwritten papers with 92% accuracy, effectively reducing manual grading time from 45 minutes to 9 minutes through intelligent image pipelines.",
     tags: ["Python", "OpenCV", "GCP", "Machine Learning"],
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop",
     sourceCode: "https://github.com/Arihant-Golchha/EduAI",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     category: "Secure Systems",
     description: "Developed a secure healthcare record infrastructure featuring AES-256 encryption, JWT authentication, and RBAC. Achieved sub-50ms data retrieval times through precise MongoDB schema indexing.",
     tags: ["Express.js", "MongoDB", "Cloudinary", "Security"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
     sourceCode: "https://github.com/Arihant-Golchha/Healthmap",
   }
 ];
@@ -66,7 +66,7 @@ export function Projects() {
 
         <div className="grid grid-cols-1 gap-12 md:gap-24">
           {projects.map((project, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function Projects() {
               <div className="w-full lg:w-3/5 overflow-hidden rounded-2xl aspect-[4/3] relative">
                 <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700" />
                 {/* Fallback styling since we can't guarantee next/image remote config works instantly without next.config.js updates for unsplash */}
-                <div 
+                <div
                   className="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                   style={{ backgroundImage: `url(${project.image})` }}
                 />
@@ -92,7 +92,7 @@ export function Projects() {
                     {project.title}
                   </h3>
                 </div>
-                
+
                 <GlassCard className="p-6 md:p-6 shadow-2xl">
                   <p className="text-zinc-300 leading-relaxed text-base">
                     {project.description}
